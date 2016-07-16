@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>用回溯法求0-1背包问题</title>
+	<link rel="stylesheet" href="index.css">
+	<script src = "algorithm.js"></script>
+    <script src = "main.js"></script>
+</head>
+<body>
+	<h1>用回溯法求0-1背包问题</h1>
+    <p>用【chrome浏览器】效果更佳哦^_^</p>
+    <div class="container">
+        <div class="left ">
+            <div class="up loadEmotion1">
+                <input type="text" placeholder="请输入背包的总容量" id="inputweight">
+                <input type="text" placeholder="请输入物品的个数" id="inputnumber">
+                <input type="button" value="确认" id="generate">
+            </div>
+            <div id="down" class=" loadEmotion1">
+                <p>需要重新填写请刷新浏览器</p>
+                <table id="dataInput">
+                    <tr class="head">
+                        <td>物品序号</td>
+                        <td>重量</td>
+                        <td>价值</td>
+                    </tr>
+                </table>
+                <input type="button" value="添加数据" id="confirm">
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="middle">
+            <div id="userData" class="loadEmotion1">
+                <p>用户添加的数据</p>
+                <table id="dataShow">
+                    <tr class="head">
+                        <td>物品序号</td>
+                        <td>重量</td>
+                        <td>价值</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="sortData" class="loadEmotion3">
+                <p>根据物品单位价值从大到小排序</p>
+                <table id="dataSort">
+                    <tr class="head">
+                        <td>物品序号</td>
+                        <td>重量</td>
+                        <td>价值</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div id="right">
+            <div id="maxValue" class="loadEmotion5">
+                <p>背包价值最高为</p>
+                <div id="show">
+                </div>
+            </div>
+            <div id="bags" class="loadEmotion7">
+                <p>其中用到的物品</p>
+                <table id="dataUsed">
+                    <tr class="head">
+                        <td>物品序号</td>
+                        <td>重量</td>
+                        <td>价值</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
