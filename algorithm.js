@@ -28,7 +28,7 @@ function knapsack(weight, value, numberOfBags, totalWeight){
     // obj为对象, 主要是为了更好的封装数据，以便给页面端使用。有四个属性, 分别是：
     //useItem：存放得到最优解后选择的那些物品，包括“序号”, “重量”, “价值”(array)
     //sortItem：对用户输入的物品按照单位重量价值进行从大到小排序，包括“序号”, “重量” ,“价值”(array)
-    //dataItem：存放得到最优解后选择的那些物品，包括“序号”, “重量” ,“价值”(array)
+    //dataItem：存放用户输入的那些物品，包括“序号”, “重量” ,“价值”(array)
     //maxdata：存放最优解的值
 
     var r = [];
